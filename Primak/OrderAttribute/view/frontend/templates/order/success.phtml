@@ -1,0 +1,11 @@
+<?php
+/** @var \Magento\Checkout\Block\Onepage\Success $block */
+/** @var $viewModelPrimakAttribute Primak\OrderAttribute\ViewModel\PrimakAttribute */
+$viewModelPrimakAttribute = $block->getData('viewModelPrimakAttribute');
+if (isset($viewModelPrimakAttribute))
+{
+    if ($viewModelPrimakAttribute->getPrimakAttribute())
+    {
+        echo 'Here Additional Information about location is - ' . $viewModelPrimakAttribute->getPrimakAttribute();
+    }
+}

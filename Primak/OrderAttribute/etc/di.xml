@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Primak\OrderAttribute\Api\ManagementInterface"
+                type="Primak\OrderAttribute\Model\Management"/>
+    <type name="Magento\Sales\Api\OrderRepositoryInterface">
+        <plugin name="primak_order_attribute"
+                type="Primak\OrderAttribute\Plugin\OrderRepositoryPlugin" />
+    </type>
+    <type name="Magento\Sales\Api\OrderManagementInterface">
+        <plugin name="place_order_primak_location"
+                type="Primak\OrderAttribute\Plugin\OrderManagementPlugin"/>
+    </type>
+</config>

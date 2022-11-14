@@ -1,0 +1,13 @@
+{
+    "primak_order_attribute": {
+        "column": {
+            "entity_id": true,
+            "order_attribute_id": true,
+            "primak_location": true
+        },
+        "constraint": {
+            "PRIMARY": true,
+            "PRIMAK_ORDER_ATTRIBUTE_ORDER_ATTRIBUTE_ID_SALES_ORDER_ENTITY_ID": true
+        }
+    }
+}
